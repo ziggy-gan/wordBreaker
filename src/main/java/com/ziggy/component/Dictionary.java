@@ -10,16 +10,8 @@ public class Dictionary {
         return lexicon;
     }
 
-    public void setLexicon(Set<String> lexicon) {
-        this.lexicon = lexicon;
-    }
-
     public Map<String, Set<String>> getPossibilities() {
         return possibilities;
-    }
-
-    public void setPossibilities(Map<String, Set<String>> possibilities) {
-        this.possibilities = possibilities;
     }
 
     private Dictionary(DictionaryBuilder builder, MatchMode mode, WordSplitor splitor) {
